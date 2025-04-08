@@ -8,7 +8,6 @@ This project explores a comprehensive dataset of hotel bookings to uncover actio
 🔗 **Dataset Used**: hotel_bookings.csv
 
 📷 **Dashboard Snapshot**:  
-*Add your dashboard image here once uploaded*  
 Example:  
 
 ![image](https://github.com/user-attachments/assets/85777409-2012-426d-bd1b-5f49685d3c55)
