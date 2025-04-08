@@ -1,55 +1,81 @@
-# Hotel_Booking_Analysis
-Capstone project
-# Hotel Booking Analysis EDA
+# Hotel Booking Analysis – Excel & Python Dashboard
+Capstone Project
 
-This project involves exploratory data analysis (EDA) of hotel booking data to uncover insights that can help reduce customer churn, improve guest satisfaction, and optimize hotel operations.
+## Overview
 
-## Project Description
+This project explores a comprehensive dataset of hotel bookings to uncover actionable insights that can help reduce cancellations, improve guest experiences, and optimize hotel operations. The analysis was performed using Python for in-depth EDA and Excel for developing an interactive dashboard.
 
-The analysis aims to:
-- Understand booking patterns and lead times
-- Identify trends in cancellations
-- Explore guest demographics and preferences
-- Analyze seasonal trends and peak booking periods
-- Investigate meal preferences and market segments
-- Examine room allocation and booking changes
+🔗 **Dataset Used**: hotel_bookings.csv
 
-## Data Overview
+📷 **Dashboard Snapshot**:  
+*Add your dashboard image here once uploaded*  
+Example:  
 
-The dataset includes the following columns:
-- `hotel`: Name of the hotel (Resort Hotel or City Hotel)
-- `is_canceled`: Booking cancellation status (1 if canceled, 0 otherwise)
-- `lead_time`: Number of days between booking and arrival
-- `arrival_date_year`: Year of arrival date
-- `arrival_date_month`: Month of arrival date
-- `arrival_date_week_number`: Week number of arrival date
-- `arrival_date_day_of_month`: Day of arrival date
-- `stays_in_weekend_nights`: Number of weekend nights (Saturday or Sunday) the guest stayed or booked to stay at the hotel
-- `stays_in_week_nights`: Number of week nights (Monday to Friday) the guest stayed or booked to stay at the hotel
-- `adults`: Number of adults
-- `children`: Number of children
-- `babies`: Number of babies
-- `meal`: Type of meal booked
-- `country`: Country of origin
-- `market_segment`: Market segment designation
-- `distribution_channel`: Booking distribution channel
-- `is_repeated_guest`: Flag indicating if the guest is a repeated guest (1 if repeated guest, 0 otherwise)
-- `previous_cancellations`: Number of previous bookings that were canceled by the customer
-- `previous_bookings_not_canceled`: Number of previous bookings not canceled by the customer
-- `reserved_room_type`: Code of room type reserved
-- `assigned_room_type`: Code of room type assigned
-- `booking_changes`: Number of changes made to the booking
-- `deposit_type`: Type of deposit made by the customer
-- `agent`: ID of the travel agency that made the booking
+![image](https://github.com/user-attachments/assets/85777409-2012-426d-bd1b-5f49685d3c55)
 
-## Installation
 
-To run the analysis, you need to have Python and the following libraries installed:
-- pandas
-- numpy
-- matplotlib
-- seaborn
+## Project Objective
 
-You can install these libraries using pip:
-```bash
-pip install pandas numpy matplotlib seaborn
+The primary goal is to analyze hotel booking behavior and identify key patterns to enhance strategic decision-making in the hospitality sector. The project focuses on:
+
+- 📊 Booking trends, lead times, and cancellation patterns.
+- 🧳 Guest demographics, including country of origin and repeat guests.
+- 🛏️ Room allocation, booking changes, and meal preferences.
+- 📆 Seasonal and monthly booking behaviors.
+- 🔍 Identifying high-risk cancellation profiles and profitable customer segments.
+- 📈 Developing a dashboard to visualize core business metrics.
+
+## Dataset Description
+
+The dataset contains the following information:
+
+| Column Name                  | Description                                                                 |
+|-----------------------------|-----------------------------------------------------------------------------|
+| `hotel`                     | Type of hotel – City Hotel or Resort Hotel                                  |
+| `is_canceled`               | Booking status – 1 if canceled, 0 otherwise                                 |
+| `lead_time`                 | Days between booking and check-in                                           |
+| `arrival_date_*`            | Date-related columns: year, month, week number, day of month                |
+| `stays_in_weekend_nights`   | Number of weekend nights stayed                                             |
+| `stays_in_week_nights`      | Number of weekday nights stayed                                             |
+| `adults`, `children`, `babies` | Number of guests categorized by age                                       |
+| `meal`                      | Type of meal plan chosen                                                    |
+| `country`                   | Guest's country of origin                                                   |
+| `market_segment`            | Segment source of booking – online, offline, corporate, etc.               |
+| `distribution_channel`      | Channel through which booking was made                                     |
+| `is_repeated_guest`         | Whether the guest is a repeat customer                                      |
+| `previous_*`                | Booking history – cancellations and non-cancellations                       |
+| `reserved_room_type`, `assigned_room_type` | Room reserved vs room allocated                             |
+| `booking_changes`           | Number of booking modifications                                             |
+| `deposit_type`              | Type of deposit paid                                                        |
+| `agent`, `company`          | Booking source details                                                      |
+| `days_in_waiting_list`      | Days booking stayed in the waitlist                                         |
+| `customer_type`             | Guest type: transient, group, contract, etc.                                |
+| `adr`                       | Average Daily Rate (cost per night)                                         |
+| `required_car_parking_spaces` | Parking spaces requested                                                 |
+| `total_of_special_requests` | Special requests made by the guest                                          |
+| `reservation_status`, `reservation_status_date` | Final status and date of reservation              |
+
+## Key Analysis Tasks
+
+Here are the core insights and tasks accomplished:
+
+- ❌ **Cancellation Analysis**: Identify patterns in booking cancellations.
+- ⏱️ **Lead Time**: Analyze how early bookings are made and how that impacts cancellation rates.
+- 🗓️ **Seasonal Trends**: Evaluate booking patterns across months and seasons.
+- 🌍 **Country-Wise Guests**: Visualize where guests are coming from.
+- 🍽️ **Meal & Market Segment Analysis**: Identify top meal plans and booking sources.
+- 🔄 **Room Allocation Mismatches**: Compare reserved vs assigned room types.
+- 💹 **ADR Trends**: Analyze revenue per room across customer types and stay durations.
+- 🎯 **Repeat Guest Behavior**: Understand loyalty trends and marketing impact.
+- 📊 **Dashboard Development**: Build a clear, interactive Excel dashboard for all KPIs.
+
+## Tools & Libraries Used
+
+- **Python Libraries**:  
+  `pandas`, `numpy`, `matplotlib`, `seaborn` for data cleaning and EDA.
+
+## Conclusion
+
+This project delivers meaningful insights from hotel booking data using Python and Excel. Key trends in guest behavior, cancellations, room assignments, and revenue optimization were uncovered, enabling hotel managers to take data-driven actions to improve service and profitability.
+
+📌 The interactive dashboard serves as a powerful tool for quick decision-making by visualizing essential metrics.
